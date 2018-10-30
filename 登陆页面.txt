@@ -1,0 +1,45 @@
+1.安装element ui
+2.配置element ui按需
+配置
+并且挂载element-ui
+具体代码：去element
+官网一步一步复制
+--注意--
+所有import放在最顶部
+配置好了，就可以在项目中用elementui了，很简单，具体参考之前代码
+3.接下来用elementui
+做登陆的input'框
+elementui官网
+复制代码,复制el-input
+的代码,
+3.1复制el-input代码
+3.2 用一个el-form
+包裹起来
+3.3 在 el-form 里加一个rules属性,属性值是验
+证规则对象,验证规则对象在data里面自己定义个验证规则对象即可
+3.4 在 el-form 里加一个model属性，属性值是一个用户属性对象，里面的值就是username和password
+3.5在input框前加一个搜索图标,去官网找,通过属性名显示图标
+----
+loginForm就是表单model:绑定的对象
+loginFormRules就是验证规则对象:rules=loginFormRules;
+
+注意：--图标什么的，是通过属性名加上去的，要使用他，必须先图标库文件复制过来，然后就可以使用--
+
+4.做登陆按钮和重置按钮，el-button加上按钮，通过type来切换颜色
+
+5.el-input框和按钮放上去以后，最后就是微调样式了
+
+注意---
+这里使用的是flex布局，flex布局一般在微信小程序和后台管理界面常用，因为这些项目不需要考虑太多兼容，而官网前端展示页面一般不用，因为兼容问题存在
+
+
+
+
+
+
+
+
+
+
+
+
